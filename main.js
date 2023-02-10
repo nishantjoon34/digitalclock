@@ -5,20 +5,23 @@ function time() {
     h=t.getHours();
     m=t.getMinutes();
     s=t.getSeconds();
+    console.log(h);
     if(h>=12 && h<=17){
         document.getElementById("timing").innerText="GOOD AFTERNOON !!";
     }
     else if(h>=18 && h<=20){
         document.getElementById("timing").innerText="GOOD EVENING !! ";
     }
-    else if(h>=21 && h<=24){
+    else if(h>=21 && h<=23){
         document.getElementById("timing").innerText="GOOD NIGHT !!";
     }
     else{
         document.getElementById("timing").innerText="GOOD MORNING !!";
     }
-    if(h>=13){
-        h-=12;
+    if(h>=12){
+        if(h!=12){
+            h-=12;
+        }
         document.getElementById("am").innerText="PM";
         str="PM";
     }

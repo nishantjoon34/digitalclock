@@ -5,7 +5,6 @@ function time() {
     h=t.getHours();
     m=t.getMinutes();
     s=t.getSeconds();
-    console.log(h);
     if(h>=12 && h<=17){
         document.getElementById("timing").innerText="GOOD AFTERNOON !!";
     }
@@ -81,7 +80,6 @@ const setEverything=()=>{
     hours1=hours1*10+c;
     cur=str2[2]; cur+=str2[3];
     if(cur==str){
-        console.log("YES")
         if(h==hours1){
             document.getElementById("text").innerText="LETS'S HAVE SOME LUNCH !!";
             document.getElementById("changeimage").src="./Component 31 – 1.jpg";

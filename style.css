@@ -196,6 +196,8 @@
     text-align: center;
     background-image: url("./AM_svg@2x.jpg");
     height: 70px;
+    box-sizing: border-box;
+    padding-top: 12px;
 }
 
 .setalarm{
